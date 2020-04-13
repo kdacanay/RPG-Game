@@ -99,12 +99,12 @@ var defeats = 0;
 
 var renderCharacter = function(character, renderArea) {
     console.log(character.name);
-    var charDiv = $("<div class='character' style='width: 16rem; margin: 10px' data-name='" + character.name + "'>");
+    var charDiv = $("<div class='character' style='border-color: #1b3547; border-style: solid; width: 16rem; margin: 10px' data-name='" + character.name + "'>");
     var charImage = $("<img alt-'image' style= 'height: 16rem;' class='character-image card-img-top'>").attr("src", character.image);
     var charBody = $("<div class='character card-body'>");
     var charName = $("<h6 class='character-name card-title'>").html(character.name);  
     var charhitPoints = $("<p class='character-hitPoints card-text'>").html(character.hitPoints);
-    var charButton = $("<a href='#' class='btn btn-primary'>Did You Know?</a>");
+    var charButton = $("<a href='#' class='btn btn-primary' style='background-color: #1B3547;'>Did You Know?</a>");
     charDiv.append(charImage).append(charName).append(charhitPoints).append(charButton);
     $((charName.append(charhitPoints).append(charButton)).wrap(charBody));
     $(renderArea).append(charDiv);
@@ -144,10 +144,10 @@ var renderMessage = function(message) {
     });
 
     // Build div that will display the victory/defeat message.
-    var gameState = $("<div>").text(resultMessage);
+    // var gameState = $("<div>").text(resultMessage);
 
     // Render the restart button and victory/defeat message to the page.
-    $("body").append(gameState);
+    // $("body").append(gameState);
   };
 
   // Function to clear the game message section

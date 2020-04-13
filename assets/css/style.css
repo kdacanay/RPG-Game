@@ -1,11 +1,19 @@
 #game-title {
     font-family: 'Bungee Shade', cursive;
     font-size: 65px;
+    color: #1B3547;
 };
 #game-intro {
     font-family: 'Black Ops One', cursive;
+    color: #1B3547;
 };   
 body {
-    background-color: #801211;
+    
     background-size: cover;
+}
+.btn .btn-primary {
+    background-color: #1B3547;
+}
+.jumbotron {
+    background-color: #868A90;
 }
