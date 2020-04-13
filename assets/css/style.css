@@ -4,4 +4,8 @@
 };
 #game-intro {
     font-family: 'Black Ops One', cursive;
-};
+};   
+body {
+    background-color: #801211;
+    background-size: cover;
+}
