@@ -98,7 +98,7 @@ var defeats = 0;
 //-------------Build Character Cards------------------
 
 var renderCharacter = function(character, renderArea) {
-    console.log(character.name);
+    
     var charDiv = $("<div class='character' style='border-color: #1b3547; border-style: solid; width: 16rem; margin: 10px' data-name='" + character.name + "'>");
     var charImage = $("<img alt-'image' style= 'height: 16rem;' class='character-image card-img-top'>").attr("src", character.image);
     var charBody = $("<div class='character card-body'>");
@@ -112,8 +112,8 @@ var renderCharacter = function(character, renderArea) {
 
 var startGame = function() {
 
-    for (var keys in characters) {
-        renderCharacter(characters[keys], "#characterRow");
+    for (var key in characters) {
+        renderCharacter(characters[key], "#characterRow");
     }
 };
 startGame();
